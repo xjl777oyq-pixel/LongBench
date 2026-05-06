@@ -1,6 +1,8 @@
-import os
-import json
 import argparse
+import json
+import os
+from pathlib import Path
+
 import numpy as np
 
 from metrics import (
@@ -77,18 +79,21 @@ def scorer(dataset, predictions, answers, all_classes):
 if __name__ == '__main__':
     args = parse_args()
     scores = dict()
+    script_dir = Path(__file__).resolve().parent
     if args.e:
-        path = f"pred_e/{args.model}/"
+        pred_dir = script_dir / "pred_e" / str(args.model)
     else:
-        path = f"pred/{args.model}/"
-    all_files = os.listdir(path)
+        pred_dir = script_dir / "pred" / str(args.model)
+    if not pred_dir.exists():
+        raise FileNotFoundError(f"未找到预测目录: {pred_dir}")
+    all_files = os.listdir(pred_dir)
     print("Evaluating on:", all_files)
     for filename in all_files:
         if not filename.endswith("jsonl"):
             continue
         predictions, answers, lengths = [], [], []
         dataset = filename.split('.')[0]
-        with open(f"{path}{filename}", "r", encoding="utf-8") as f:
+        with open(pred_dir / filename, "r", encoding="utf-8") as f:
             for line in f:
                 data = json.loads(line)
                 predictions.append(data["pred"])
@@ -101,9 +106,6 @@ if __name__ == '__main__':
         else:
             score = scorer(dataset, predictions, answers, all_classes)
         scores[dataset] = score
-    if args.e:
-        out_path = f"pred_e/{args.model}/result.json"
-    else:
-        out_path = f"pred/{args.model}/result.json"
-    with open(out_path, "w") as f:
+    out_path = pred_dir / "result.json"
+    with open(out_path, "w", encoding="utf-8") as f:
         json.dump(scores, f, ensure_ascii=False, indent=4)
