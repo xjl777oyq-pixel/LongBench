@@ -1,0 +1,20 @@
+{"pred": "None of the above. The abstract is not present in any of the provided paragraphs.", "answers": ["Paragraph 15"], "all_classes": null, "length": 8525}
+{"pred": "Paragraph 8", "answers": ["Paragraph 8"], "all_classes": null, "length": 8679}
+{"pred": "The abstract is not from any of the provided paragraphs. The abstract is a separate text that does not match any of the paragraphs. Therefore, the correct answer is:\n\nNone of the above", "answers": ["Paragraph 18"], "all_classes": null, "length": 9562}
+{"pred": "None of the above. The abstract is not from any of the 30 paragraphs provided.", "answers": ["Paragraph 17"], "all_classes": null, "length": 9273}
+{"pred": "None of the above. The abstract is not from any of the provided paragraphs.", "answers": ["Paragraph 14"], "all_classes": null, "length": 9175}
+{"pred": "Paragraph 3", "answers": ["Paragraph 3"], "all_classes": null, "length": 9139}
+{"pred": "Paragraph 24", "answers": ["Paragraph 24"], "all_classes": null, "length": 8832}
+{"pred": "Paragraph 27", "answers": ["Paragraph 27"], "all_classes": null, "length": 8995}
+{"pred": "The abstract is not from any of the provided paragraphs. The abstract is a summary of the Gopher mascot's origin and history, which is not mentioned in any of the provided paragraphs. Therefore, the correct answer is:\n\nNone of the above", "answers": ["Paragraph 30"], "all_classes": null, "length": 7789}
+{"pred": "Paragraph 10", "answers": ["Paragraph 12"], "all_classes": null, "length": 10027}
+{"pred": "Paragraph 9", "answers": ["Paragraph 22"], "all_classes": null, "length": 9273}
+{"pred": "The abstract is from Paragraph 30.", "answers": ["Paragraph 30"], "all_classes": null, "length": 10178}
+{"pred": "Paragraph 24", "answers": ["Paragraph 24"], "all_classes": null, "length": 9221}
+{"pred": "None of the paragraphs provided match the abstract. The abstract appears to be from a different text, likely a horror story. Therefore, the correct answer is \"Not found\" or \"None of the above\".", "answers": ["Paragraph 19"], "all_classes": null, "length": 9718}
+{"pred": "Paragraph 7", "answers": ["Paragraph 3"], "all_classes": null, "length": 11340}
+{"pred": "Paragraph 8", "answers": ["Paragraph 8"], "all_classes": null, "length": 9750}
+{"pred": "Paragraph 7", "answers": ["Paragraph 3"], "all_classes": null, "length": 8965}
+{"pred": "None of the paragraphs provided match the abstract. The abstract is not from any of the 30 paragraphs provided.", "answers": ["Paragraph 17"], "all_classes": null, "length": 8965}
+{"pred": "Paragraph 4", "answers": ["Paragraph 4"], "all_classes": null, "length": 9275}
+{"pred": "The abstract is from Paragraph 8.", "answers": ["Paragraph 3"], "all_classes": null, "length": 10934}
